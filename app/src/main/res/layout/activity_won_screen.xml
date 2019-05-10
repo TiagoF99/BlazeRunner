@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context=".WonScreen">
+
+    <!-- TITLE COLOR IS: #B0D329-->
+    <ImageView
+        android:layout_width="314dp"
+        android:layout_height="428dp"
+        android:src="@drawable/levelcomplete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.835"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/MainMenu"
+        android:layout_width="329dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="152dp"
+        android:onClick="goMainMenu"
+        android:text="Main Menu"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:backgroundTint="@color/design_default_color_primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/retry"
+        android:layout_width="329dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="68dp"
+        android:onClick="replayLevel"
+        android:text="Replay Level"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:backgroundTint="@color/design_default_color_primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
